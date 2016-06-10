@@ -16,16 +16,16 @@ svg {
   stroke-miterlimit:10;
 }
 
+.snow,.flake{fill:#fff;}
 .base{fill:#303030;}
 .glass{fill:#d0ebea;}
-.snow,.flake{fill:#fff;}
 .nose{fill:#ea9c22;}
 .arm{fill:none;}
 
 
 
 /* Shake effect */
-@-webkit-keyframes classname {
+@-webkit-keyframes shake {
   0% { -webkit-transform: translate(2px, 1px) rotate(0deg); }
   
   10% { -webkit-transform: translate(-1px, -2px) rotate(-5deg); }
@@ -42,7 +42,7 @@ svg {
   100% { -webkit-transform: translate(1px, -2px) rotate(-5deg); }
 }
 
-classname:hover {
+svg:hover {
   -webkit-animation-name: shake;
   -webkit-animation-duration: 1s;
   -webkit-transform-origin:50% 50%;
@@ -51,7 +51,7 @@ classname:hover {
 }
 
 
-classname:hover classname { 
+svg:hover svg { 
   -webkit-animation-name: shake;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-duration: 1s;
